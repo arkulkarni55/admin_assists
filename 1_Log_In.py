@@ -55,7 +55,8 @@ if connect:
         session = session_builder(conn)
         st.session_state['Session'] = session
         if session:
-            st.success('Connection Successful')   
+            st.success('Connection Successful')
+            switch_page("Help_page")    
     except snowflake.connector.errors.DatabaseError as e:
         if 'Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.' in e.args[0]:
             st.write('Your Free Trial has expired. Use a different account')
