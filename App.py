@@ -2,12 +2,12 @@ import configparser
 import streamlit as st
 from multiapp import MultiApp
 
-# # Get the current credentials
-# config = configparser.ConfigParser()
-# config.sections()
-# config.read('config.ini')
+# Get the current credentials
+config = configparser.ConfigParser()
+config.sections()
+config.read('config.ini')
     
-# app_selection = st.sidebar.selectbox("Utility",("Log_In","Help_Page","File_Upload_Utility","Over_Under_Size_File_Identifier","User_Management","Log_Out"))
+app_selection = st.sidebar.selectbox("Utility",("Log_In","Help_Page","File_Upload_Utility","Over_Under_Size_File_Identifier","User_Management","Log_Out"))
 
 # from pages import Log_In,Help_Page,File_Upload_Utility,Over_Under_Size_File_Identifier,User_Management,Log_Out
 
