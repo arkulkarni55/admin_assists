@@ -1,13 +1,24 @@
 import streamlit as st
-from multiapp import Multiapp
+st.Title("Utility")
+
+app_selection = st.sidebar.radio("Go to" ,("Log_In","Help_Page","File_Upload_Utility","Over_Under_Size_File_Identifier","User_Management","Log_Out"))
+
 from pages import Log_In,Help_Page,File_Upload_Utility,Over_Under_Size_File_Identifier,User_Management,Log_Out
-app = Multiapp()
 
-app.add_ap("Log_In",Log_In.app)
-app.add_ap("Help_Page",Help_Page.app)
-app.add_ap("File_Upload_Utility",File_Upload_Utility.app)
-app.add_ap("Over_Under_Size_File_Identifier",Over_Under_Size_File_Identifier.app)
-app.add_ap("User_Management",User_Management.app)
-app.add_ap("Log_Out",Log_Out.app)
+app_functions = {
 
-app.run 
+  "Log_In" : Log_In.app,
+  "Help_Page": Help_Page.app,
+  "File_Upload_Utility": File_Upload_Utility.app,
+  "Over_Under_Size_File_Identifier" : Over_Under_Size_File_Identifier.app,
+  "User_Management" : User_Management.app ,
+  "Log_Out" : Log_Out.app
+  
+}
+
+
+if app_selection in app_functions:
+  app_functions[app_selection]()
+else:
+  st.error("Apps not found")
+  
