@@ -3,9 +3,10 @@ import streamlit as st
 
 
 # Get the current credentials
+def set_page_config():
 st.set_page_config(
+    set_page_config()
     page_title = "The Utility app",
-    page_icon = ":chart_with_upward_trend:",
     layout = "wide"
 )
     
