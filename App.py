@@ -1,14 +1,7 @@
 import configparser
 import streamlit as st
 
-
-# Get the current credentials
-st.set_page_config(
-    page_title = "The Utility app",
-    layout = "wide"
-)
-    
-    
+  
     
 app_selection = st.sidebar.selectbox("Utility",("Log_In","Help_Page","File_Upload_Utility","Over_Under_Size_File_Identifier","User_Management","Log_Out"))
 
