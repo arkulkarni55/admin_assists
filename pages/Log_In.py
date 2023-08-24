@@ -5,10 +5,10 @@ from snowflake.snowpark.functions import *
 import streamlit as st
 import pandas as pd
 
-# # Get the current credentials
-# config = configparser.ConfigParser()
-# config.sections()
-# config.read('config.ini')
+# Get the current credentials
+config = configparser.ConfigParser()
+config.sections()
+config.read('config.ini')
     
 
 #Function to select the Snowflake Account
