@@ -3,10 +3,9 @@ import streamlit as st
 
 
 # Get the current credentials
-def set_page_config():
-    st.set_page_config(
-        page_title = "The Utility app",
-        layout = "wide"
+st.set_page_config(
+    page_title = "The Utility app",
+    layout = "wide"
 )
     
     
