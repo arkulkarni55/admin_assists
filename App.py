@@ -3,7 +3,7 @@ import streamlit as st
 
   st.set_page_config(
     layout="wide",
-    page_title="Over/Under Size File Identifier"
+    page_title="App_Utility"
 )
     
 app_selection = st.sidebar.selectbox("Utility",("Log_In","Help_Page","File_Upload_Utility","Over_Under_Size_File_Identifier","User_Management","Log_Out"))
