@@ -3,9 +3,12 @@ import streamlit as st
 
 
 # Get the current credentials
-config = configparser.ConfigParser()
-config.sections()
-config.read('config.ini')
+st.set_page_config(
+    page_title = "The Utility app",
+    page_icon = ":chart_with_upward_trend:",
+    layout = "wide"
+    
+    
     
 app_selection = st.sidebar.selectbox("Utility",("Log_In","Help_Page","File_Upload_Utility","Over_Under_Size_File_Identifier","User_Management","Log_Out"))
 
