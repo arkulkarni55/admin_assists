@@ -7,6 +7,7 @@ st.set_page_config(
     page_title = "The Utility app",
     page_icon = ":chart_with_upward_trend:",
     layout = "wide"
+)
     
     
     
