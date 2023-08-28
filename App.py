@@ -1,4 +1,4 @@
-
+from snowflake.snowpark import Session
 import streamlit as st
 
 st.set_page_config(
