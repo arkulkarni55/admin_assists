@@ -43,12 +43,12 @@ st.markdown("""
 """)
 
 # Add all your application here
-app.add_app("Log_In" : Log_In.app),
-app.add_app("Help_Page": Help_Page.app),
-app.add_app("File_Upload_Utility": File_Upload_Utility.app),
-app.add_app("Over_Under_Size_File_Identifier" : Over_Under_Size_File_Identifier.app),
-app.add_app("User_Management" : User_Management.app),
-app.add_app("Log_Out" : Log_Out.app)
+app.add_app({"Log_In" : Log_In.app}),
+app.add_app({"Help_Page": Help_Page.app}),
+app.add_app({"File_Upload_Utility": File_Upload_Utility.app}),
+app.add_app({"Over_Under_Size_File_Identifier" : Over_Under_Size_File_Identifier.app}),
+app.add_app({"User_Management" : User_Management.app}),
+app.add_app({"Log_Out" : Log_Out.app})
 
 # The main app
 app.run()
