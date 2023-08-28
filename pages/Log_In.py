@@ -58,9 +58,9 @@ def session_builder(conn):
     session = Session.builder.configs(conn).create()
     return session
 
-st.set_page_config(
-    layout="wide",
-)
+# st.set_page_config(
+#     layout="wide",
+# )
 
 st.title('Login')
 st.info('Login on this screen to use other tools seemlessly. Please refresh the page while switching between accounts')
