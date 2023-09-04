@@ -15,22 +15,22 @@ st.set_page_config(
 app_selection = st.sidebar.selectbox("Utility",("Log_In","Help_Page","File_Upload_Utility","Over_Under_Size_File_Identifier","User_Management","Log_Out"))
 
 
-# app_functions = {
+app_functions = {
 
-#   "Log_In" : Log_In.page,
-#   "Help_Page": Help_Page.page,
-#   "File_Upload_Utility": File_Upload_Utility.page,
-#   "Over_Under_Size_File_Identifier" : Over_Under_Size_File_Identifier.page,
-#   "User_Management" : User_Management.page,
-#   "Log_Out" : Log_Out.page
+  "Log_In" : Log_In.page,
+  "Help_Page": Help_Page.page,
+  "File_Upload_Utility": File_Upload_Utility.page,
+  "Over_Under_Size_File_Identifier" : Over_Under_Size_File_Identifier.page,
+  "User_Management" : User_Management.page,
+  "Log_Out" : Log_Out.page
   
-# }
+}
 
 
-# if app_selection in app_functions:
-#   app_functions[app_selection]()
-# else:
-#   st.error("Apps not found")
+if app_selection in app_functions:
+  app_functions[app_selection]()
+else:
+  st.error("Apps not found")
 
 
 
