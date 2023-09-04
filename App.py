@@ -1,8 +1,6 @@
 from snowflake.snowpark import Session
 import streamlit as st
 
-if 'key' not in st.session_state:
-    st.session_state['key'] = 'value'
 
 st.set_page_config(
   layout="wide",
