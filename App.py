@@ -1,7 +1,7 @@
 
 import streamlit as st
 
-session = st.session_state.get('Session')
+
 
 
 st.set_page_config(
