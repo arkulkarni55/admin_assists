@@ -1,8 +1,8 @@
 from snowflake.snowpark import Session
 import streamlit as st
+from pages import * 
 
 
-conn = sfAccount_selector(config)
 
 st.set_page_config(
   layout="wide",
