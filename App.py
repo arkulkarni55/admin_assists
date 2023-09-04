@@ -1,6 +1,6 @@
 
 import streamlit as st
-from multiapp import Multiapp
+from Multiapp import multiapp
 from pages import Log_In,Help_Page,File_Upload_Utility,Over_Under_Size_File_Identifier,User_Management,Log_Out
 
 
@@ -39,7 +39,7 @@ st.set_page_config(
 #from pages import Log_In,Help_Page,File_Upload_Utility,Over_Under_Size_File_Identifier,User_Management,Log_Out
 
 
-app = MultiApp()
+app = multiApp()
 
 st.markdown("""
 # Multi-Page App
