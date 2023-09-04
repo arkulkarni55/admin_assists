@@ -3,6 +3,10 @@ import streamlit as st
 
 session = st.session_state.get('Session')
 
+sfAccount_selector(_config)
+
+switch_page(page_name: str)
+
 st.set_page_config(
   layout="wide",
   page_title="App_Utility"
