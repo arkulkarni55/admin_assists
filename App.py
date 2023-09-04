@@ -1,6 +1,5 @@
 from snowflake.snowpark import Session
 import streamlit as st
-from Log_In import * 
 
 
 
