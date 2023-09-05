@@ -24,9 +24,6 @@ app_functions = {
 }
 
 
-
-
-
 if app_selection in app_functions:
   app_functions[app_selection]()
 else:
