@@ -8,7 +8,7 @@ st.set_page_config(
 
 
 
-app_selection = st.sidebar.selectbox("Utility",("Log_In","Help_Page","File_Upload_Utility","Over_Under_Size_File_Identifier","User_Management","Log_Out"))0
+app_selection = st.sidebar.selectbox("Utility",("Log_In","Help_Page","File_Upload_Utility","Over_Under_Size_File_Identifier","User_Management","Log_Out"))
 
 
 
