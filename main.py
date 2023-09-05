@@ -6,6 +6,7 @@ st.set_page_config(
   page_title="App_Utility"
 )
 
+st.sidebar.selectbox(
 app_functions = {
 
   "Log_In" : Log_In.app,
@@ -15,10 +16,8 @@ app_functions = {
   "User_Management" : User_Management.app,
   "Log_Out" : Log_Out.app
   
-}
+})
 
-
-app_selection = st.sidebar.selectbox("Utility",(app_functions{}))
 
 if app_selection in app_functions:
   app_functions[app_selection]()
