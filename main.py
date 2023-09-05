@@ -6,8 +6,8 @@ st.set_page_config(
   page_title="App_Utility"
 )
 
-st.sidebar.selectbox(
-app_functions = {
+app_functions = st.sidebar.selectbox(
+ {
 
   "Log_In" : Log_In.app,
   "Help_Page": Help_Page.app,
