@@ -6,8 +6,9 @@ st.set_page_config(
   page_title="App_Utility"
 )
 
-app_functions = st.sidebar.selectbox(
- {
+app_selection = st.sidebar.selectbox("Utility",("Log_In","Help_Page","File_Upload_Utility","Over_Under_Size_File_Identifier","User_Management","Log_Out"))
+
+app_functions =  {
 
   "Log_In" : Log_In.app,
   "Help_Page": Help_Page.app,
@@ -16,7 +17,7 @@ app_functions = st.sidebar.selectbox(
   "User_Management" : User_Management.app,
   "Log_Out" : Log_Out.app
   
-})
+}
 
 
 if app_selection in app_functions:
