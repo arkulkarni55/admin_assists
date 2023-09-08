@@ -17,7 +17,6 @@ app_functions =  {
   "Over_Under_Size_File_Identifier" : Over_Under_Size_File_Identifier.app,
   "User_Management" : User_Management.app,
   "Log_Out" : Log_Out.app
-  
 }
 
 
