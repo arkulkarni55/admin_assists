@@ -2,10 +2,10 @@ import streamlit as st
 import pandas as pd
 from snowflake.snowpark.functions import *
 
-# st.set_page_config(
-#     layout="wide",
-#     page_title="Log Out"
-# )
+st.set_page_config(
+    layout="wide",
+    page_title="Log Out"
+)
 
 st.title('Log Out')
 
