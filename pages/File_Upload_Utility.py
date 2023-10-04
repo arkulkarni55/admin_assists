@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 
 # Page config must be set
-comment
+
 st.set_page_config(
     layout="wide",
     page_title="File Upload App"
